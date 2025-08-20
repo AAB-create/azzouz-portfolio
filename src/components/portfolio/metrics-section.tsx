@@ -3,10 +3,16 @@ import { TrendingUp, Target, DollarSign, Users } from "lucide-react"
 
 export function MetricsSection() {
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 bg-muted/20 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-10 left-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-10 right-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl font-bold text-secondary mb-4">
+          <h2 className="text-4xl font-bold text-foreground mb-4">
             Performance Overview
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -50,19 +56,19 @@ export function MetricsSection() {
         
         {/* Additional Stats Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 scroll-reveal">
-          <div className="text-center p-6 bg-white rounded-xl shadow-professional">
+          <div className="text-center p-6 card-gradient border border-border/50 rounded-xl shadow-glow hover-lift">
             <div className="text-2xl font-bold text-primary mb-2">$8.90</div>
             <div className="text-sm text-muted-foreground">Average CPL</div>
             <div className="text-xs text-success mt-1">27% below industry avg</div>
           </div>
           
-          <div className="text-center p-6 bg-white rounded-xl shadow-professional">
-            <div className="text-2xl font-bold text-primary mb-2">62%</div>
+          <div className="text-center p-6 card-gradient border border-border/50 rounded-xl shadow-glow hover-lift">
+            <div className="text-2xl font-bold text-accent mb-2">62%</div>
             <div className="text-sm text-muted-foreground">CPA Reduction</div>
             <div className="text-xs text-success mt-1">Through segmentation</div>
           </div>
           
-          <div className="text-center p-6 bg-white rounded-xl shadow-professional">
+          <div className="text-center p-6 card-gradient border border-border/50 rounded-xl shadow-glow hover-lift">
             <div className="text-2xl font-bold text-primary mb-2">83%</div>
             <div className="text-sm text-muted-foreground">Fraud Reduction</div>
             <div className="text-xs text-success mt-1">Lead scoring system</div>

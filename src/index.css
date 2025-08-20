@@ -177,13 +177,13 @@
   
   /* Performance Metrics */
   .metric-card {
-    @apply bg-white rounded-xl p-6 shadow-professional border border-border;
+    @apply card-gradient rounded-xl p-6 border border-border/50 hover-lift;
     transition: var(--transition-smooth);
   }
   
   .metric-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-large);
+    box-shadow: var(--shadow-glow);
   }
 }
 
