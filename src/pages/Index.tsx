@@ -1,12 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/portfolio/hero-section"
+import { MetricsSection } from "@/components/portfolio/metrics-section"
+import { ExpertiseSection } from "@/components/portfolio/expertise-section"
+import { CTASection } from "@/components/portfolio/cta-section"
+import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const Index = () => {
+  const containerRef = useScrollReveal()
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div ref={containerRef} className="min-h-screen">
+      <HeroSection />
+      <MetricsSection />
+      <ExpertiseSection />
+      <CTASection />
     </div>
   );
 };
