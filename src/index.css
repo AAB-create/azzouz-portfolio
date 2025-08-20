@@ -8,28 +8,28 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Tech Professional */
-    --background: 0 0% 100%;
-    --foreground: 215 25% 27%;
+    /* Futuristic Dark Theme Colors */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
     
-    /* Brand Primary - Professional Blue */
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 91% 70%;
+    /* Brand Primary - Neon Cyan */
+    --primary: 190 100% 50%;
+    --primary-foreground: 240 10% 3.9%;
+    --primary-glow: 190 100% 60%;
     
-    /* Secondary - Deep Navy */
-    --secondary: 215 25% 27%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary - Deep Space */
+    --secondary: 240 10% 3.9%;
+    --secondary-foreground: 0 0% 98%;
     
-    /* Accent - Electric Blue */
-    --accent: 213 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent - Electric Purple */
+    --accent: 270 100% 65%;
+    --accent-foreground: 0 0% 98%;
     
     /* Neutral System */
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 16% 47%;
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --muted: 240 8% 12%;
+    --muted-foreground: 240 5% 65%;
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 98%;
     
     /* Success & Warning */
     --success: 142 76% 36%;
@@ -38,22 +38,22 @@
     --warning-foreground: 0 0% 100%;
     
     /* Borders & UI */
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 240 20% 15%;
+    --input: 240 20% 15%;
+    --ring: 190 100% 50%;
     --radius: 0.75rem;
     
-    /* Professional Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(213, 100%, 50%));
-    --gradient-secondary: linear-gradient(135deg, hsl(215, 25%, 27%), hsl(217, 91%, 30%));
-    --gradient-hero: linear-gradient(135deg, hsl(217, 91%, 60%) 0%, hsl(213, 100%, 50%) 50%, hsl(266, 100%, 65%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 98%) 100%);
+    /* Futuristic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(190, 100%, 50%), hsl(270, 100%, 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(240, 10%, 8%), hsl(240, 20%, 15%));
+    --gradient-hero: linear-gradient(135deg, hsl(240, 10%, 3.9%) 0%, hsl(190, 100%, 20%) 50%, hsl(270, 100%, 30%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(240, 10%, 8%) 0%, hsl(240, 15%, 12%) 100%);
     
-    /* Professional Shadows */
-    --shadow-subtle: 0 1px 3px hsl(215, 25%, 27%, 0.1);
-    --shadow-medium: 0 4px 12px hsl(215, 25%, 27%, 0.15);
-    --shadow-large: 0 10px 40px hsl(215, 25%, 27%, 0.2);
-    --shadow-glow: 0 0 30px hsl(217, 91%, 60%, 0.3);
+    /* Neon Shadows */
+    --shadow-subtle: 0 1px 3px hsl(190, 100%, 50%, 0.1);
+    --shadow-medium: 0 4px 12px hsl(190, 100%, 50%, 0.15);
+    --shadow-large: 0 10px 40px hsl(190, 100%, 50%, 0.2);
+    --shadow-glow: 0 0 30px hsl(190, 100%, 50%, 0.4);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
