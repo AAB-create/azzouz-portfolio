@@ -66,7 +66,7 @@ export function ExpertiseSection() {
           {verticals.map((vertical, index) => (
             <Card 
               key={vertical.name}
-              className="hover-lift group bg-gradient-to-br from-white to-muted/20 border-0 shadow-professional"
+              className="hover-lift group card-gradient border border-border/50 shadow-glow"
             >
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between">
