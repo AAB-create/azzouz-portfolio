@@ -102,7 +102,7 @@ export function ExpertiseSection() {
                 
                 <div className="pt-3 border-t border-border/50">
                   <div className="text-xs text-muted-foreground mb-1">Key Insight:</div>
-                  <div className="text-sm font-medium text-secondary">
+                  <div className="text-sm font-medium text-white">
                     {vertical.insights}
                   </div>
                 </div>
