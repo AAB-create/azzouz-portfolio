@@ -1,10 +1,29 @@
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { ScrollArea } from "@/components/ui/scroll-area"
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react"
 import heroImage from "@/assets/hero-analytics.jpg"
+import { DetailedPortfolio } from "./detailed-portfolio"
 
 export function HeroSection() {
+  const [isPortfolioOpen, setIsPortfolioOpen] = useState(false)
+
   return (
+    <>
+      <Dialog open={isPortfolioOpen} onOpenChange={setIsPortfolioOpen}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-background/95 backdrop-blur-lg border-border/50">
+          <DialogHeader className="p-6 pb-2">
+            <DialogTitle className="text-2xl text-white">Detailed Portfolio</DialogTitle>
+          </DialogHeader>
+          <ScrollArea className="max-h-[calc(95vh-80px)]">
+            <div className="px-6 pb-6">
+              <DetailedPortfolio />
+            </div>
+          </ScrollArea>
+        </DialogContent>
+      </Dialog>
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 hero-gradient opacity-90" />
@@ -52,7 +71,12 @@ export function HeroSection() {
               <Mail className="mr-2 h-5 w-5" />
               Contact Me
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white/50 hover:bg-white/10">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-white border-white/50 hover:bg-white/10"
+              onClick={() => setIsPortfolioOpen(true)}
+            >
               <ExternalLink className="mr-2 h-5 w-5" />
               View Portfolio
             </Button>
@@ -75,5 +99,6 @@ export function HeroSection() {
         </div>
       </div>
     </section>
+    </>
   )
 }
