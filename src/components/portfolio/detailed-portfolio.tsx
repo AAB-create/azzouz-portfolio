@@ -156,7 +156,7 @@ export function DetailedPortfolio() {
                     <th className="text-left py-3 px-4 text-muted-foreground">Metric</th>
                     <th className="text-left py-3 px-4 text-muted-foreground">Auto Insurance</th>
                     <th className="text-left py-3 px-4 text-muted-foreground">Finance</th>
-                    <th className="text-left py-3 px-4 text-muted-foreground">COD</th>
+                    <th className="text-left py-3 px-4 text-muted-foreground">Ecom</th>
                     <th className="text-left py-3 px-4 text-muted-foreground">Adult</th>
                     <th className="text-left py-3 px-4 text-muted-foreground">Industry Avg</th>
                   </tr>
@@ -270,13 +270,13 @@ export function DetailedPortfolio() {
               <motion.div variants={fadeInUp} className="metric-card p-6 rounded-xl">
                 <div className="flex items-center gap-3 mb-4">
                   <Truck className="w-8 h-8 text-primary" />
-                  <h3 className="text-xl font-bold text-white">COD Specialization</h3>
+                  <h3 className="text-xl font-bold text-white">Ecom Specialization</h3>
                 </div>
                 
                 <div className="mb-4 p-3 bg-background/50 rounded-lg">
                   <MermaidDiagram chart={`
                     graph LR
-                        A[Pre-Qualified Traffic] --> B[COD Placement]
+                        A[Pre-Qualified Traffic] --> B[Ecom Placement]
                         B --> C[Post-Delivery Verification]
                   `} />
                 </div>
@@ -483,7 +483,7 @@ export function DetailedPortfolio() {
                   <p className="text-muted-foreground text-sm">MarketCall, Debt Solutions Network</p>
                 </div>
                 <div className="p-3 bg-background/50 rounded-lg">
-                  <p className="text-white font-medium text-sm">COD:</p>
+                  <p className="text-white font-medium text-sm">Ecom:</p>
                   <p className="text-muted-foreground text-sm">DrCash, TerraLeads, AdCombo</p>
                 </div>
                 <div className="p-3 bg-background/50 rounded-lg">
