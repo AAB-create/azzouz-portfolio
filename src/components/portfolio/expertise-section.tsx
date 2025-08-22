@@ -21,7 +21,7 @@ const verticals = [
     color: "text-success"
   },
   {
-    name: "COD E-commerce",
+    name: "Ecom Specialization",
     icon: <Package className="h-6 w-6" />,
     roas: "22x",
     cpl: "$9-10",

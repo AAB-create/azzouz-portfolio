@@ -266,7 +266,7 @@ export function DetailedPortfolio() {
                 </div>
               </motion.div>
 
-              {/* COD Card */}
+              {/* Ecom Card */}
               <motion.div variants={fadeInUp} className="metric-card p-6 rounded-xl">
                 <div className="flex items-center gap-3 mb-4">
                   <Truck className="w-8 h-8 text-primary" />

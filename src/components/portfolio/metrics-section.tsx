@@ -24,7 +24,7 @@ export function MetricsSection() {
           <MetricCard
             value="22x"
             label="Peak ROAS Achieved"
-            trend="COD Campaigns"
+            trend="Ecom Campaigns"
             icon={<TrendingUp className="h-5 w-5" />}
             variant="success"
           />

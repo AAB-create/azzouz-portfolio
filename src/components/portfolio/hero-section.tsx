@@ -59,7 +59,7 @@ export function HeroSection() {
               Insurance
             </Badge>
             <Badge variant="outline" className="bg-white/10 text-white border-white/30">
-              COD
+              Ecom
             </Badge>
             <Badge variant="outline" className="bg-white/10 text-white border-white/30">
               Adult

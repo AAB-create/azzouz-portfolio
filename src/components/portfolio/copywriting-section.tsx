@@ -27,7 +27,7 @@ export function CopywritingSection() {
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            High-converting copy and email campaigns that drive results across finance, insurance, and COD verticals
+            High-converting copy and email campaigns that drive results across finance, insurance, and Ecom verticals
           </p>
         </div>
 
