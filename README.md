@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Azzouz Portfolio - GitHub Pages Deployment
 
 ## Project info
 
